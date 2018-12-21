@@ -2,176 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Оформление заказа</title>
 </head>
 <body>
+<!--блок шапки сайта-->
 <header>
     <div class="container">
         <div class="left">
-            <a href=""><span></span></a>
+            <a href="#"><span></span>Войти в личный кабинет</a>
             <ul class="menu">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Корпоративным клиентам</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О мастерской </a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </div>
         <div class="logo">
-            <a href=""><img src="" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
         </div>
         <div class="right">
-            <a href=""><span></span></a>
-            <a href=""></a>
-            <p></p>
-            <a href=""></a>
+            <a href="tel:8 (495) 648-8-456"><span></span>8 (495) 648-8-456</a>
+            <a href="#">Не дозвонились?</a>
+            <p> Мы работаем пн-пт 10:00 - 19:00</p>
+            <a href="#">товаров <span>5</span> на сумму <span>2550&#8381</span></a>
         </div>
     </div>
 </header>
 <div class="container">
     <div class="content">
-        <ul class="breadcrumbs">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li></li>
+        <ul class="breadCrumbs">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Корзина</a></li>
+            <li><span>Оформление заказа</span></li>
         </ul>
-        <h1></h1>
+        <h1>Оформление заказа</h1>
         <form action="">
             <div>
-                <label for=""></label>
-                <select name="" id="">
-                    <option value=""></option>
+                <label for="city">Выбор города</label>
+                <select name="city" id="city">
+                    <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
                 </select>
             </div>
         </form>
         <fieldset>
-            <h2></h2>
+            <h2>Способ доставки</h2>
             <ul>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="imLogistics">
+                    <label for="imLogistics">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
+                    <p>Заказ оформленный:
+                        - до 16:00 будет доставлен на следующий рабочий день;
+                        - после 16:00 будет доставлен через один рабочий день;</p>
                 </li>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="express">
+                    <label for="express">Экспресс-доставка 450 р.</label>
+                    <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка
+                        осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки
+                        недоступна.</p>
                 </li>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="bounty">
+                    <label for="bounty">Доставить в подарок 450 р.</label>
+                    <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется
+                        только по предоплате. </p>
+                    <span>Дополнительная услуга — подарочная упаковка</span>
                 </li>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="yorself">
+                    <label for="yorself">Самовывоз из пункта выдачи заказов 0 р.</label>
+                    <p>1-2 рабочих дня.</p>
                 </li>
             </ul>
         </fieldset>
         <fieldset>
-            <h2></h2>
+            <h2>Адрес Доставки</h2>
             <div>
-                <label for=""></label>
-                <input type="text">
+                <label for="street">Улица<span>*</span></label>
+                <input type="text" id="street" name="street">
             </div>
             <div>
-                <label for=""></label>
-                <input type="text">
+                <label for="area">Район<span>*</span></label>
+                <input type="text" id="area" name="area">
+            </div>
+            <div class="house">
+                <div>
+                    <div>
+                        <label for="house1">Дом<span>*</span></label>
+                        <input type="text" id="house1" name="house1">
+                    </div>
+                    <div>
+                        <label for="house2">Корпус<span>*</span></label>
+                        <input type="text" id="house2" name="house2">
+                    </div>
+                    <div>
+                        <label for="house3">Квартира/Офис<span>*</span></label>
+                        <input type="text" id="house3" name="house3">
+                    </div>
+                </div>
             </div>
             <div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-            </div>
-            <div>
-                <label for="">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </label>
+                <label for="info">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                <textarea name="info" id="info"></textarea>
             </div>
         </fieldset>
         <fieldset>
-            <h2></h2>
+            <h2>Способ оплаты</h2>
             <ul>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="handPay">
+                    <label for="handPay">Оплата при получении</label>
+                    <p>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</p>
                 </li>
                 <li>
-                    <input type="radio">
-                    <label for=""></label>
-                    <p></p>
+                    <input type="radio" id="visa">
+                    <label for="visa">Оплата электронным способом (Робокасса)</label>
+                    <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
                 </li>
             </ul>
         </fieldset>
         <fieldset>
-            <h2></h2>
+            <h2>Ваши данные</h2>
             <div>
-                <label for=""></label>
-                <input type="text">
+                <label for="name">Имя<span>*</span></label>
+                <input type="text" id="name" name="name">
             </div>
             <div>
-                <label for=""></label>
-                <input type="text">
+                <label for="mail">Электронная почта<span>*</span></label>
+                <input type="text" id="mail" name="mail">
             </div>
-            <div>
-                <label for=""></label>
-                <input type="text">
+            <div
+            ><label for="phone">Номер телефона<span>*</span></label>
+                <input type="text" id="phone" name="phone">
             </div>
         </fieldset>
-        <button></button>
+        <button>Продолжить</button>
     </div>
-
 </div>
-
+<!--блок подвала сайта-->
 <footer>
     <div class="container">
         <ul class="footMenu">
             <li class="col">
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Войти в личный кабинет</a></li>
                 </ul>
             </li>
             <li class="col">
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </li>
         </ul>
-        <div class="footCont">
-            <a href=""></a>
-            <a href=""></a>
-            <span></span>
-            <div class="socLink">
-                <span></span>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+    </div>
+    <div class="footCont">
+        <a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
+        <a href="email:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+        <span>пн-пт 10:00 - 19:00</span>
+        <div class="socLink">
+            <span>Ищите нас здесь</span>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
         </div>
-        <div class="copyright">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span>
-                <a href=""></a>
-            </span>
-
-        </div>
+    </div>
+    <div class="copyright">
+        <span> &copy © 2011-2014 Экочеловечки </span>
+        <span>Все права защищены</span>
+        <span>Все цены указаны в рублях</span>
+        <span>Разработка<a href="#"> «Биат»</a></span>
     </div>
 </footer>
 </body>
