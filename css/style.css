@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    width: 1010px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+header .login {
+    font-size: 13px;
+    line-height: 18px;
+    color: #006984;
+}
+
+header .menu {}
+
+header .menu li {}
+
+header .menu li a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+
+}
+
+.logo {}
+
+header .phone {
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+header .callback {
+    font-size: 12px;
+    line-height: 16px;
+    color: #0069b4;
+    border-bottom: 1px dashed #0069b4;
+    text-decoration: none;
+}
+
+header .timing {
+    font-size: 13px;
+    line-height: 19px;
+    color: #999999;
+}
+
+header .basket {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+}
+
+header .basket span {
+    color: #1a9547;
+}
+
+header [class*="icon"] {}
+
