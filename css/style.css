@@ -30,18 +30,20 @@ header .login {
     color: #006984;
 }
 
-header .menu {}
+header .menu {
+}
 
-header .menu li {}
+header .menu li {
+}
 
 header .menu li a {
     font-size: 13px;
     line-height: 18px;
     color: #333333;
-
 }
 
-.logo {}
+.logo {
+}
 
 header .phone {
     font-size: 20px;
@@ -54,13 +56,13 @@ header .callback {
     font-size: 12px;
     line-height: 16px;
     color: #0069b4;
-    border-bottom: 1px dashed #0069b4;
     text-decoration: none;
+    border-bottom: 1px dashed #0069b4;
 }
 
 header .timing {
     font-size: 13px;
-    line-height: 19px;
+    line-height: 18px;
     color: #999999;
 }
 
@@ -69,6 +71,10 @@ header .basket {
     line-height: 22px;
     color: #333333;
     text-decoration: none;
+    display: inline-block;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 header .basket span {
@@ -87,13 +93,31 @@ header .phone [class*="icon"] {
     font-size: 20px;
 }
 
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
+
+.banner .slider {
+    width: 640px;
+    height: 360px;
+}
+
+.banner > div {
+    -webkit-background-size: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .advanteges .item span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
 }
-.advanteges .item p {
+
+.advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
@@ -117,9 +141,9 @@ header .phone [class*="icon"] {
     color: #ffffff;
 }
 
-.subscribe .wrap span {
+.subscribe .warp span {
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .filter li {
@@ -131,6 +155,15 @@ header .phone [class*="icon"] {
 .filter li a {
     text-decoration: none;
     color: #666666;
+}
+
+.card .img {
+    width: 220px;
+    height: 220px;
+    -webkit-background-size: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card .name {
@@ -167,12 +200,28 @@ header .phone [class*="icon"] {
     color: #ffffff;
 }
 
-.widjets h1 {
+.widjets h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     text-align: center;
     color: #666666;
+}
+
+.widjets .item:first-child, .widjets .item:last-child {
+    width: 290px;
+    height: 400px;
+}
+
+.widjets .item:nth-child(2) {
+    width: 350px;
+    height: 400px;
+}
+
+.widjets .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tabs li a {
@@ -182,13 +231,13 @@ header .phone [class*="icon"] {
     color: #999999;
 }
 
-.info .content {
+.tubContent .content {
     font-size: 12px;
     line-height: 18px;
     color: #333333;
 }
 
-.info .title {
+.tubContent .title {
     text-transform: uppercase;
 }
 
@@ -207,3 +256,181 @@ footer a.soc {
     font-size: 21px;
 }
 
+/*Новости подробно*/
+
+.breadCrumbs li a, .breadCrumbs li {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.firstCap {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.secCap {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.newsDate {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+
+.newsTxt {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.moreNews {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
+}
+
+/*Корпоративным клиентам*/
+
+.breadCrumbs li a, .breadCrumbs li {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.wrapper p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.wrapLabel label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+
+.formLogo span:nth-child(1) {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.formLogo span:nth-child(2) {
+    font-size: 11px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.formLogo label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.addLogo label a {
+    font-size: 13px;
+    line-height: 22px;
+    color: #229647;
+}
+
+.addLogo span {
+    font-size: 11px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.rightWrap span {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.rightWrap a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.leftWrap button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+/*Оформление заказа*/
+
+.breadCrumbs li a, .contentOrder .breadCrumbs li span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.contentOrder h1 {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.contentOrder h2 {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.contentOrder .orderCity label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.contentOrder label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.contentOrder li p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.contentOrder li span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #f26522;
+}
+
+.required {
+    color: #ed1c24;
+}
+
+.data label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.contentOrder button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+}

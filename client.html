@@ -12,7 +12,7 @@
 <header>
     <div class="container">
         <div class="left">
-            <a href="#"><span></span>Войти в личный кабинет</a>
+            <a href="#" class="login"><span class="icon-user"></span>Войти в личный кабинет</a>
             <ul class="menu">
                 <li><a href="#">Оптовикам</a></li>
                 <li><a href="#">Корпоративным клиентам</a></li>
@@ -22,35 +22,35 @@
             </ul>
         </div>
         <div class="logo">
-            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="img/png/logo.png" alt="logo"></a>
         </div>
         <div class="right">
-            <a href="tel:8 (495) 648-8-456"><span></span>8 (495) 648-8-456</a>
-            <a href="#">Не дозвонились?</a>
-            <p> Мы работаем пн-пт 10:00 - 19:00</p>
-            <a href="#">товаров <span>5</span> на сумму <span>2550&#8381</span></a>
+            <a href="tel:8 (495) 648-8-456" class="phone"><span class="icon-phone"></span>8 (495) 648-8-456</a>
+            <a href="#" class="callback">Не дозвонились?</a>
+            <p class="timing"> Мы работаем пн-пт 10:00 - 19:00</p>
+            <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на сумму <span>2550&#8381</span></a>
         </div>
     </div>
 </header>
 <div class="container">
-    <div class="content">
+    <div class="contentClient">
         <ul class="breadCrumbs">
             <li><a href="#">Главная</a></li>
             <li><span>Корпоративным клиентам</span></li>
         </ul>
         <div class="wrapper">
-            <div class="left">
+            <div class="leftWrap">
                 <p>Для расчета заказа заполните форму ниже, или позвоните нам 8 (495) 648-8-456</p>
-                <form action="">
-                    <div>
+                <form action="#">
+                    <div class="wrapLabel">
                         <label for="formName">Название организации</label>
                         <input type="text" id="formName" name="formName">
                     </div>
-                    <div>
+                    <div class="wrapLabel">
                         <label for="formWho">Контактное лицо</label>
                         <input type="text" id="formWho" name="formWho">
                     </div>
-                    <div>
+                    <div class="wrapLabel">
                         <label for="phone">Номер телефона</label>
                         <input type="text" id="phone" name="phone">
                     </div>
@@ -70,53 +70,62 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="addLogo">
                         <input type="file" id="addLogo">
-                        <label for="addLogo">Прикрепите логотип</label>
+                        <label for="addLogo"><a href="#">Прикрепите логотип</a></label>
                         <span>.cdr, .ai, .eps, .tiff</span>
                     </div>
-                    <div>
+                    <div class="wrapLabel">
                         <label for="much">Количество фигурок</label>
                         <select name="much" id="much">
                             <option value="150">150</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="wrapLabel">
                         <label for="date">Подготовить заказ к</label>
                         <input type="date" id="date" name="date">
                         <span></span>
                     </div>
-                    <div>
-                        <label for="info"></label>
-                        <textarea name="info" id="info">Дополнительная информация</textarea>
+                    <div class="wrapLabel">
+                        <label for="info">Дополнительная информация</label>
+                        <textarea name="info" id="info"></textarea>
                     </div>
                     <button>Отправить</button>
                 </form>
             </div>
-            <div class="right">
+            <div class="rightWrap">
                 <div>
                     <span>Свежий подарок</span>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а
-                        нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный
+                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
+                        логотипа
+                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш логотип для нанесения на фигурку.</p>
+                        подготовят ваш
+                        логотип для нанесения на фигурку.</p>
                 </div>
                 <div>
                     <span>Разные образы</span>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а
-                        нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный
+                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
+                        логотипа
+                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш логотип для нанесения на фигурку.</p>
+                        подготовят ваш
+                        логотип для нанесения на фигурку.</p>
                 </div>
                 <div>
                     <span>Фигурки на заказ</span>
                     <p>Экочеловечки отлично вписались в ряды корпоративных подарков. Это не удивительно ведь стильный и
-                        лаконичный образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а
-                        нанесение логотипа вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
+                        лаконичный
+                        образ фигурки производит впечатление и здорово смотрится и дома и на рабочем месте, а нанесение
+                        логотипа
+                        вашей компании еще раз подчеркнет положительный образ в глазах клиента.</p>
                     <p>Наши дизайнеры предложат наиболее удачные варианты для размещения корпоративной символики и
-                        подготовят ваш логотип для нанесения на фигурку.</p>
+                        подготовят ваш
+                        логотип для нанесения на фигурку.</p>
                 </div>
                 <button><a href="#">Скачать презентацию</a></button>
             </div>
@@ -145,7 +154,7 @@
     </div>
     <div class="footCont">
         <a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
-        <a href="email:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+        <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
         <span>пн-пт 10:00 - 19:00</span>
         <div class="socLink">
             <span>Ищите нас здесь</span>
