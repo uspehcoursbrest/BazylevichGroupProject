@@ -23,7 +23,7 @@ ul {
     padding: 0 15px;
 }
 
-
+button
 header .login {
     font-size: 13px;
     line-height: 18px;
@@ -31,9 +31,12 @@ header .login {
 }
 
 header .menu {
+
 }
 
 header .menu li {
+    display: inline-block;
+    margin-right: 18px;
 }
 
 header .menu li a {
@@ -110,17 +113,42 @@ header .phone [class*="icon"] {
     background-position: center;
 }
 
-.advanteges .item span {
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.advantages .item {
+    width: 25%;
+    float: left;
+}
+
+.advantages {
+    width: calc(100% - 320px);
+    float: left;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.advantages .item span {
     font-size: 12px;
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
 }
 
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
+}
+
+.subscribe {
+    width: 320px;
+    float: left;
 }
 
 .subscribe label {
@@ -150,11 +178,43 @@ header .phone [class*="icon"] {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+}
+
+.filter li + li {
+margin-left: 18px;
 }
 
 .filter li a {
     text-decoration: none;
     color: #666666;
+}
+
+.card {
+    position: relative;
+}
+
+.card .status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card .status.hit {
+    background-color: #6eddcc;
+}
+
+.card .status.discount {
+    background-color: #ffed03;
+}
+
+.card .status.new {
+    background-color: #78ec71;
 }
 
 .card .img {
@@ -198,7 +258,10 @@ header .phone [class*="icon"] {
     line-height: 32px;
     text-align: center;
     color: #ffffff;
+    border: none;
 }
+
+
 
 .widjets h2 {
     font-size: 18px;
@@ -245,6 +308,7 @@ footer {
     font-size: 13px;
     line-height: 22px;
     color: #ffffff;
+    background: #64b94a;
 }
 
 footer a {
@@ -255,7 +319,22 @@ footer a {
 footer a.soc {
     font-size: 21px;
 }
-
+.footMenu {
+    width: 50%;
+    float: left;
+ }
+.footMenu .col {
+    width: 50%;
+    float: left;
+}
+.footCont {
+    width: 25%;
+    float: left;
+}
+.copyright {
+    width: 25%;
+    float: left;
+}
 /*Новости подробно*/
 
 .breadCrumbs li a, .breadCrumbs li {
