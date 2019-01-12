@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     font-family: "Open Sans";
 }
+
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -28,9 +29,26 @@ header .login {
     font-size: 13px;
     line-height: 18px;
     color: #006984;
+
 }
 
-header .menu {
+header .login:hover {
+    text-decoration: transparent;
+}
+
+a,button{
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+header .menu li a:hover {
+    text-decoration: transparent;
 
 }
 
@@ -91,6 +109,10 @@ header .phone {
     line-height: 20px;
     color: #333333;
     text-decoration: none;
+}
+
+header .phone:hover {
+    opacity: 0.7;
 }
 
 header .callback {
@@ -259,7 +281,7 @@ header .phone [class*="icon"] {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    }
+}
 
 .card {
     position: relative;
@@ -272,7 +294,7 @@ header .phone [class*="icon"] {
 }
 
 .card .title {
-display: block;
+    display: block;
 }
 
 .card .buy {
@@ -309,7 +331,7 @@ display: block;
 .card .img {
     width: 100%;
     height: 220px;
-    -webkit-background-size: cover ;
+    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -395,7 +417,29 @@ display: block;
 
 .tubContent .title {
     text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
 }
+
+.tubContent .title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid #333333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+}
+
+.tubContent .title.active::before {
+    transform: rotate(180deg);
+}
+
 
 footer {
     font-size: 13px;
@@ -610,4 +654,56 @@ footer a.soc {
     font-size: 14px;
     line-height: 22px;
     color: #ffffff;
+}
+
+.orderList li {
+    padding-left: 40px;
+}
+
+.orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioBtn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.radioBtn:checked + label::before {
+    border-color: #51bf87;
+}
+
+.radioBtn:checked + label::after {
+    opacity: 1;
 }
