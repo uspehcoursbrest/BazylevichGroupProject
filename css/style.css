@@ -188,6 +188,75 @@ header .right a:hover {
     opacity: 0.7;
 }
 
+header.mobile {
+    display: none;
+    position: relative;
+    padding: 18px 0;
+    background-color: #63ba94;
+}
+
+.mobileWrap {
+    display: table;
+    width: 100%;
+}
+
+.menuMobile {
+    cursor: pointer;
+}
+
+.menuMobile span {
+    display: block;
+    margin-bottom: 7px;
+    height: 5px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.menuDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    background-color: #63ba49;
+}
+
+.menuDropdown a {
+    font-size: 13px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logoMobile {
+    width: 50%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.basketMobile {
+    text-align: right;
+}
+
+.basketMobile a {
+    display: inline-block;
+    width: 44px;
+    height: 37px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menuMobile, .logoMobile, .basketMobile {
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
@@ -273,12 +342,47 @@ header .right a:hover {
     margin-top: 15px;
 }
 
-
 .subscribe {
     width: 320px;
     float: left;
     background-color: #63b94a;
     padding: 20px;
+}
+
+.mobileSub {
+    display: none;
+    margin-bottom: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.mobileSub label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #666666;
+}
+
+.mobileSub input {
+    float: left;
+    padding: 0 10px;
+    width: 66.6666%;
+    height: 26px;
+    line-height: 26px;
+    color: #999999;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+
+.mobileSub button {
+    float: right;
+    width: 33.3333%;
+    line-height: 45px;
+    color: #ffffff;
+    background-color: #259b43;
+    border: none;
+    outline: none;
 }
 
 .advantages {
@@ -313,6 +417,10 @@ header .right a:hover {
 
 .filter li:hover {
     border-bottom: 1px solid #666666;
+}
+
+.filterSelect {
+    display: none;
 }
 
 .cards {
@@ -761,7 +869,7 @@ footer a.soc {
         width: 295px;
     }
 
-    .banner .slider {
+    .slider {
         height: 350px;
         width: 620px;
     }
@@ -787,10 +895,127 @@ footer a.soc {
     .container {
         width: 780px;
     }
+
+    header .left {
+        width: 40%;
+    }
+
+    header .right {
+        width: 40%;
+    }
+
+    header .logo {
+        width: 20%;
+    }
+
+    .banner > div {
+        height: 260px;
+    }
+
+    .banner .sale {
+        width: 220px;
+    }
+
+    .banner .slider {
+        width: 470px;
+    }
+
+    .advantages {
+        width: 100%;
+    }
+
+    .subscribe {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .filterSelect {
+        float: left;
+        display: block;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footMenu {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footMenu .col {
+        float: none;
+        width: 100%;
+    }
+
+    .footMenu .col li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .footCont {
+        width: 50%;
+    }
+
+    .copyright {
+        width: 50%;
+    }
+
+    .socLink div {
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+
+    header, .banner, .advSub, .info {
+        display: none;
+    }
+
+    header.mobile {
+        display: block;
+    }
+
+    .cards {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .card .img {
+        height: 270px;
+    }
+    .mobileSub {
+        display: block;
+    }
+    .footCont {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+    .socLink div {
+        position: relative;
+        bottom: 0;
     }
 }
