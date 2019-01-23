@@ -24,6 +24,12 @@ ul {
     padding: 0 15px;
 }
 
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
 /*Блок - Ссылка HTML-25*/
 
 .invisLink {
@@ -271,6 +277,38 @@ header.mobile {
 .banner .slider {
     width: 640px;
     height: 360px;
+    position: relative;
+}
+
+.banner .slider .item {
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner .slider .dots {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.banner .slider .dots button {
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.banner .slider .dots button + button {
+    margin-left: 12px;
+}
+
+.banner .slider .dots button.active {
+    opacity: 1;
 }
 
 .banner > div {
@@ -432,6 +470,7 @@ header.mobile {
 .card {
     position: relative;
     border-bottom: 1px solid #e4e4e4;
+    z-index: 1;
 }
 
 .card .img {
@@ -515,6 +554,32 @@ header.mobile {
     bottom: 10px;
 }
 
+.card .tumbnail {
+    position: absolute;
+    display: none;
+    top: -12px;
+    right: -12px;
+    padding: 11px;
+    width: 313px;
+    height: 356px;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    z-index: -1;
+}
+
+.card .tumbnail .pic {
+    margin-bottom: 10px;
+    width: 53px;
+    height: 53px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .tumbnail .pic.active {
+    border: 1px solid #259c47;
+}
+
 .status.hit {
     background-color: #6eddcc;
 }
@@ -593,6 +658,49 @@ header.mobile {
 
 .info .title.active:before {
     transform: rotate(180deg);
+}
+
+.info.ui-tabs {
+    padding: 0;
+}
+
+.info.uitabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.info.uitabs .ui-tabs-nav li{
+    margin: 0;
+}
+
+.info.uitabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+    padding: 0;
+}
+
+.info.uitabs .ui-tabs-nav li.ui-tabs-anchor {
+    padding: 0 15px;
+}
+
+.info.uitabs .ui-tabs-panel {
+    padding: 0;
+}
+
+.info .tabs a {
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    text-decoration: none;
+    padding: 0 15px;
+    outline: none;
+    height: 45px;
+    line-height: 45px;
+}
+
+.info .tabs li.ui-tabs-active a, .info .tabs li a:hover {
+    border: none;
+    background-color: #f2fff7;
+    color: #1c9847;
+    cursor: pointer;
 }
 
 footer {
