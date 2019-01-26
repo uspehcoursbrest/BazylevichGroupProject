@@ -1,1 +1,1 @@
-# BazylevichGroupProject
+# KondratykGroupProject

@@ -27,173 +27,174 @@
                     <li><a href="#">Оптовикам</a></li>
                     <li><a href="#">Корпоративным клиентам</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О мастерской </a></li>
+                    <li><a href="#">О мастерской</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
             <div class="logo tCell invisLink">
-                <img src="img/png/logo.png" alt="logo">
+                <img src="img/png/logo.png" alt="">
                 <a href="#">Главная</a>
             </div>
             <div class="right tCell">
                 <a href="tel:8 (495) 648-8-456" class="phone"><span class="icon-phone"></span>8 (495) 648-8-456</a>
-                <a href="#" class="callback">Не дозвонились?</a>
-                <p class="timing"> Мы работаем пн-пт <br>10:00 - 19:00</p>
+                <a href="#" class="callBack">Не дозвонились?</a>
+                <p class="timing">Мы работаем пн-пт 10:00 - 19:00</p>
                 <a href="#" class="basket" style="background-image: url(img/png/basket.png)">товаров <span>5</span> на
                     сумму
-                    <span>2550&#8381</span></a>
+                    <span>2550 ₽</span></a>
             </div>
         </div>
     </div>
 </header>
 <div class="container">
-    <div class="contentOrder">
+    <div class="content">
         <ul class="breadCrumbs">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Корзина</a></li>
-            <li><span>Оформление заказа</span></li>
+            <li><a href=""></a>Главная/</li>
+            <li><a href=""></a>Корзина/</li>
+            <li>Оформление заказа</li>
         </ul>
-        <h1>Оформление заказа</h1>
-        <form action="">
-            <div class="selectB1">
-                <label for="city">Выбор города</label>
+        <h1 class="titleOrder">Оформление заказа</h1>
+        <form action="" class="makeOrder">
+            <div class="yourInfo selectB1">
+                <label for="city" class="yourInformation">Выбор города</label>
                 <select name="city" id="city">
                     <option>Москва, Московская обл., Россия</option>
                 </select>
             </div>
-
-        </form>
-        <fieldset>
-            <h2>Способ доставки</h2>
-            <ul class="orderList">
-                <li>
-                    <input type="radio" id="imLogistics" name="deliveryMethod" class="radioBtn">
-                    <label for="imLogistics">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
-                    <p>Заказ оформленный:
-                        - до 16:00 будет доставлен на следующий рабочий день;
-                        - после 16:00 будет доставлен через один рабочий день;</p>
-                </li>
-                <li>
-                    <input type="radio" id="express" name="deliveryMethod" class="radioBtn">
-                    <label for="express">Экспресс-доставка 450 р.</label>
-                    <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка
-                        осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки
-                        недоступна.</p>
-                </li>
-                <li>
-                    <input type="radio" id="bounty" name="deliveryMethod" class="radioBtn">
-                    <label for="bounty">Доставить в подарок 450 р.</label>
-                    <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка осуществляется
-                        только по предоплате. </p>
-                    <span>Дополнительная услуга — подарочная упаковка</span>
-                </li>
-                <li>
-                    <input type="radio" id="yorself" name="deliveryMethod" class="radioBtn">
-                    <label for="yorself">Самовывоз из пункта выдачи заказов 0 р.</label>
-                    <p>1-2 рабочих дня.</p>
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset class="data">
-            <h2>Адрес Доставки</h2>
-            <div>
-                <label for="street">Улица<span class="required">*</span></label>
-                <input type="text" id="street" name="street">
-            </div>
-            <div>
-                <label for="area">Район<span class="required">*</span></label>
-                <input type="text" id="area" name="area">
-            </div>
-            <div class="house">
-                <div>
-                    <div>
-                        <label for="house1">Дом<span class="required">*</span></label>
-                        <input type="text" id="house1" name="house1">
+            <fieldset class="way">
+                <h2>Способ доставки</h2>
+                <ul class="wayDelivery orderList">
+                    <li>
+                        <input type="radio" name="delivery" id="courier" class="radioBtn">
+                        <label for="courier">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
+                        <span>Заказ оформленный:</span>
+                        <span>- до 16:00 будет доставлен на следующий рабочий день;</span>
+                        <span>- после 16:00 будет доставлен через один рабочий день;</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="delivery" id="express" class="radioBtn">
+                        <label for="express">Экспресс-доставка 450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка
+                            осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки
+                            недоступна.</p>
+                    </li>
+                    <li>
+                        <input type="radio" name="delivery" id="gift" class="radioBtn">
+                        <label for="gift">Доставить в подарок 450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка
+                            осуществляется только по предоплате.
+                            <span class="dopOr">Дополнительная услуга — подарочная упаковка</span></p>
+                    </li>
+                    <li>
+                        <input type="radio" name="delivery" id="independet" class="radioBtn">
+                        <label for="independet">Самовывоз из пункта выдачи заказов 0 р.</label>
+                        <p>1-2 рабочих дня.</p>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="address">
+                <h2>Адрес доставки</h2>
+                <div class="street">
+                    <label for="street" class="yourInformation">Улица<span class="star">*</span></label>
+                    <input type="text" name="street" id="street" class="stanIn">
+                </div>
+                <div class="district">
+                    <label for="district" class="yourInformation">Район<span class="star">*</span></label>
+                    <input type="text" name="district" id="district" class="stanIn">
+                </div>
+                <div class="tableAddress">
+                    <div class="home">
+                        <label for="home" class="yourInformation">Дом<span class="star">*</span></label>
+                        <input type="text" name="home" id="home" class="stanIn2">
                     </div>
-                    <div>
-                        <label for="house2">Корпус<span class="required">*</span></label>
-                        <input type="text" id="house2" name="house2">
+                    <div class="part">
+                        <label for="part" class="yourInformation">Корпус<span class="star">*</span></label>
+                        <input type="text" name="part" id="part" class="stanIn2">
                     </div>
-                    <div>
-                        <label for="house3">Квартира/Офис<span>*</span></label>
-                        <input type="text" id="house3" name="house3">
+                    <div class="flat">
+                        <label for="flat" class="yourInformation">Квартира/Офис<span class="star">*</span></label>
+                        <input type="text" name="flat" id="flat" class="stanIn3">
                     </div>
                 </div>
-            </div>
-            <div>
-                <label for="info">Дополнительно (номер домофона, номер офиса и тд.)</label>
-                <textarea name="info" id="info"></textarea>
-            </div>
-        </fieldset>
-        <fieldset>
-            <h2>Способ оплаты</h2>
-            <ul>
-                <li>
-                    <input type="radio" id="handPay">
-                    <label for="handPay">Оплата при получении</label>
-                    <p>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</p>
-                </li>
-                <li>
-                    <input type="radio" id="visa">
-                    <label for="visa">Оплата электронным способом (Робокасса)</label>
-                    <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset class="data">
-            <h2>Ваши данные</h2>
-            <div>
-                <label for="name">Имя<span class="required">*</span></label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label for="mail">Электронная почта<span class="required">*</span></label>
-                <input type="text" id="mail" name="mail">
-            </div>
-            <div
-            ><label for="phone">Номер телефона<span class="required">*</span></label>
-                <input type="text" id="phone" name="phone">
-            </div>
-        </fieldset>
-        <button>Продолжить</button>
+                <div class="message">
+                    <label for="message" class="yourInformation">Дополнительно (номер домофона, номер офиса и
+                        тд.)</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="paymentFiel">
+                <h2>Способ оплаты</h2>
+                <ul class="wayPayment">
+                    <li class="cash">
+                        <input type="radio" name="pay" id="cash">
+                        <label for="cash">Оплата при получении</label>
+                        <p>Вы сможете оплатить стоимость заказа наличными
+                            при получении заказа от курьера.</p>
+                    </li>
+                    <li class="electronic">
+                        <input type="radio" name="pay" id="electronic">
+                        <label for="electronic">Оплата электронным способом (Робокасса)</label>
+                        <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="facts">
+                <h2>Ваши данные</h2>
+                <div class="name">
+                    <label for="name" class="yourInformation">Имя<span class="star">*</span></label>
+                    <input type="text" name="name" id="name" class="stanIn">
+                </div>
+                <div class="mail">
+                    <label for="mail" class="yourInformation">Электронная почта<span class="star">*</span></label>
+                    <input type="text" name="mail" id="mail" class="stanIn">
+                </div>
+                <div class="phoneOrder">
+                    <label for="phone" class="yourInformation">Номер телефона<span class="star">*</span></label>
+                    <input type="text" name="phone" id="phone" class="stanIn">
+                </div>
+            </fieldset>
+            <button>Продолжить</button>
+        </form>
     </div>
 </div>
 <!--блок подвала сайта-->
-<footer>
+<footer class="orderFooter">
     <div class="container">
-        <ul class="footMenu">
-            <li class="col">
-                <ul>
-                    <li><a href="#">Оптовикам</a></li>
-                    <li><a href="#">Корпоративным клиентам</a></li>
-                    <li><a href="#">Войти в личный кабинет</a></li>
-                </ul>
-            </li>
-            <li class="col">
-                <ul>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О мастерской</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="footCont">
-        <a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
-        <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
-        <span>пн-пт 10:00 - 19:00</span>
-        <div class="socLink">
-            <span>Ищите нас здесь</span>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+        <div class="clear">
+            <ul class="footMenu clear">
+                <li class="col">
+                    <ul>
+                        <li><a href=""></a>Оптовикам</li>
+                        <li><a href=""></a>Корпоративным клиентам</li>
+                        <li><a href=""></a>Войти в личный кабинет</li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href=""></a>Доставка и оплата</li>
+                        <li><a href=""></a>О мастерской</li>
+                        <li><a href=""></a>Контакты</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footCont">
+                <a href="tel:8 (945) 648-8-456">8 (945) 648-8-456</a>
+                <a href="ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00 - 19:00</span>
+                <div class="socLink">
+                    <span>Ищите нас здесь</span>
+                    <a href="" class="icon-soc1"></a>
+                    <a href="" class="icon-soc2"></a>
+                    <a href="" class="icon-soc3"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span><a href="#">Разработка «Биат»</a></span>
+            </div>
         </div>
-    </div>
-    <div class="copyright">
-        <span> &copy © 2011-2014 Экочеловечки </span>
-        <span>Все права защищены</span>
-        <span>Все цены указаны в рублях</span>
-        <span>Разработка<a href="#"> «Биат»</a></span>
     </div>
 </footer>
 </body>
