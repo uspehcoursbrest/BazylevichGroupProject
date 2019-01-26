@@ -47,4 +47,6 @@ $(document).ready(function () {
         active: 0
     });
 
+    $('select').selectric();
+
 })
